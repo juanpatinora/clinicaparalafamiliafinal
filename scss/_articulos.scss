@@ -1,0 +1,91 @@
+@mixin cajaDeArticulos{
+    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+@mixin bloqueDeArticulo{
+    background-color: $bg_transparente;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    transition: all 0.7s ease;
+}
+
+.cajaArticulos{
+    @include cajaDeArticulos;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.articulo{
+    @include bloqueDeArticulo;
+    width: 33.3%;
+    margin: 10px;
+}
+
+.articulo:hover{
+    background-color: $bg_solido;
+}
+
+.imagen__articulo{
+    opacity: 0.8;
+    transition: all 0.7s ease;
+}
+
+.imagen__articulo:hover{
+    opacity: 1.0;
+    transform: scale(1.05, 1.05);
+}
+
+.boton__articulo{
+    font-size: 1.1rem;
+    transition: all 1s ease;
+}
+
+.boton__articulo:hover{
+    font-size: 1.1rem;
+    font-weight: bolder;
+    transform: scale(1.5, 1.5);
+}
+
+.cajaEventos{
+    @include cajaDeArticulos;
+    width: 100%;
+}
+
+.eventos{
+    @include bloqueDeArticulo;
+    width: 25%;
+    margin: 10px;
+}
+
+.nombreEventos{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 700px){
+    .cajaArticulos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .articulo{
+        width: 100%;
+    }
+
+    .cajaEventos{
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    
+    .eventos{
+        width: 100%;
+    }
+}

@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Grand+Hotel&display=swap");
+.cajaArticulos {
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  padding-top: 0px;
+  margin: 0px;
+  width: 100%;
+  padding-bottom: 40px; }
+
+.articulo {
+  background-color: rgba(221, 160, 221, 0.425);
+  display: inline-block;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  transition: all 0.7s ease;
+  width: 33.3%;
+  margin: 10px; }
+
+.articulo:hover {
+  background-color: rgba(221, 160, 221, 0.925); }
+
+.imagen__articulo {
+  opacity: 0.8;
+  transition: all 0.7s ease; }
+
+.imagen__articulo:hover {
+  opacity: 1.0;
+  transform: scale(1.05, 1.05); }
+
+.boton__articulo {
+  font-size: 1.1rem;
+  transition: all 1s ease; }
+
+.boton__articulo:hover {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  transform: scale(1.5, 1.5); }
+
+.cajaEventos {
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  padding-top: 0px;
+  margin: 0px;
+  width: 100%; }
+
+.eventos {
+  background-color: rgba(221, 160, 221, 0.425);
+  display: inline-block;
+  padding: 25px;
+  border-radius: 25px;
+  text-align: center;
+  transition: all 0.7s ease;
+  width: 25%;
+  margin: 10px; }
+
+.nombreEventos {
+  font-size: 1.5rem; }
+
+@media (max-width: 700px) {
+  .cajaArticulos {
+    display: flex;
+    flex-direction: column; }
+  .articulo {
+    width: 100%; }
+  .cajaEventos {
+    display: flex;
+    flex-direction: column;
+    padding: 2em; }
+  .eventos {
+    width: 100%; } }
+
+.seccionBanners {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100% !important;
+  margin-bottom: 5em; }
+
+.banners {
+  border-radius: 40px;
+  opacity: .8;
+  transition: all 0.7s ease;
+  width: 50%; }
+
+.banners img {
+  border-radius: 40px; }
+
+.banners:hover {
+  opacity: 1.0;
+  transform: scale(1.05, 1.05); }
+
+@media (max-width: 700px) {
+  .seccionBanners {
+    display: flex;
+    flex-direction: column; }
+  .banners {
+    width: 90%;
+    margin: auto; } }
+
+.botonVolver {
+  opacity: 0.8;
+  justify-content: left;
+  display: inline;
+  transition: all 0.5s ease; }
+
+.botonVolver:hover {
+  opacity: 1.0; }
+
+.slide {
+  margin: 20px auto;
+  padding: 10px 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between; }
+
+.logoEmpresa {
+  transition: all 0.5s ease; }
+
+.logoEmpresa:hover {
+  opacity: 0.9;
+  transform: scale(1.2, 1.3); }
+
+@media (max-width: 700px) {
+  .slide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px; }
+  .logoEmpresa {
+    width: 50%; } }
+
+.caja {
+  width: 400px;
+  height: 250px; }
+
+.caja1 {
+  background-color: linear-gradient(326deg, #861657 0%, #ffa69e 50%);
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  line-height: 20px; }
+
+.fotoEquipo {
+  transition: all 0.4s ease;
+  width: 60%;
+  margin: auto; }
+
+.fotoEquipo:hover {
+  transform: scale(1.05, 1.05); }
+
+.caja3 {
+  display: inline-block;
+  background-image: linear-gradient(160deg, #f8ceec 0%, #a88beb 74%);
+  border-radius: 60px; }
+
+.nombresEquipo {
+  font-size: 1.5rem; }
+
+.cargo {
+  font-size: 1.3rem; }
+
+@media (max-width: 700px) {
+  .fotoEquipo {
+    width: 100%; }
+  .caja2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto; }
+  .caja3 {
+    width: 45%; }
+  .caja3 img {
+    width: 100%; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+.logo {
+  margin: -35px; }
+
+/*nav{
+    margin: 70px 300px 0px 90px;
+}*/
+.menu {
+  background-image: linear-gradient(90deg, #eec0c600 50%, #c27efa8f 100%);
+  border-radius: 25px; }
+
+.menu li {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block; }
+
+.menu li a {
+  color: #474242;
+  display: inline-block;
+  padding: 4px;
+  margin: 12px 12px 12px 75px;
+  transition: all 0.4s ease; }
+
+.menu li a:hover {
+  background-color: rgba(128, 128, 255, 0.24);
+  border-radius: 20px;
+  padding: 4px;
+  font-weight: bold; }
+
+.logoMenu {
+  left: 25px; }
+
+@media (max-width: 700px) {
+  .navbar {
+    margin-top: 2em; } }
+
+body {
+  font-family: 'Comfortaa','sans-serif';
+  background-image: url(../Fondo_index.jpg); }
+
+h1 {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #610061;
+  font-size: 2.0rem; }
+
+h2, p, div {
+  color: #610061;
+  margin: 10px;
+  padding: 5px;
+  font-size: 2.0rem;
+  text-align: center; }
+
+.titular {
+  color: #610061;
+  text-align: center;
+  font-family: 'Grand Hotel', sans-serif;
+  font-size: 5rem;
+  font-weight: 100; }
+
+.font1 {
+  color: #381f00;
+  font-size: 25px;
+  text-transform: inherit;
+  line-height: 27px; }
+
+a {
+  text-decoration: none; }
+
+.textoFooter {
+  font-size: 1rem;
+  text-align: center; }
+
+@media (max-width: 700px) {
+  h2, p, div {
+    font-size: 1.5rem; }
+  h1 {
+    font-size: 1.7rem;
+    line-height: 70px; }
+  p {
+    line-height: 25px; } }
+
+.listaRedes ul li {
+  list-style: none;
+  display: inline; }
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  right: 30px;
+  transition: all 0.5s ease;
+  opacity: 0.9; }
+
+.redes:hover {
+  opacity: 1;
+  transform: scale(1.03, 1.03); }
+
+.botonesRedes {
+  list-style-type: none;
+  height: 160px;
+  weight: 100px;
+  box-sizing: border-box;
+  padding: 10px;
+  position: fixed;
+  right: 1%;
+  top: 190px;
+  z-index: 999; }
+
+.formulario {
+  color: #610061;
+  margin: 10px;
+  padding: 5px;
+  font-size: 2.0rem;
+  text-align: center;
+  font-family: 'Comfortaa','sans-serif'; }
+
+.formulario button {
+  background-color: #610061 !important;
+  color: #fff !important; }
+
+.cita {
+  color: #610061;
+  font-family: 'Comfortaa','sans-serif';
+  font-size: 1.5rem;
+  text-align: center; }

@@ -1,0 +1,59 @@
+.caja{
+    width: 400px;
+    height: 250px;
+}
+
+.caja1{
+    background-color: $bg_caja1;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    line-height: 20px;
+}
+
+.fotoEquipo{
+    transition: all 0.4s ease;
+    width: 60%;
+    margin: auto;
+}
+
+.fotoEquipo:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.caja3{
+    display: inline-block;
+    background-image: $bg_caja2;    
+    border-radius: 60px;
+}
+
+.nombresEquipo{
+    font-size: 1.5rem;
+}
+
+.cargo{
+    font-size: 1.3rem;
+}
+
+@media (max-width: 700px){
+    .fotoEquipo{
+        width: 100%;
+    }
+    
+    .caja2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    .caja3{
+        width: 45%;
+    }
+
+    .caja3 img{
+        width: 100%;
+    }
+}
+

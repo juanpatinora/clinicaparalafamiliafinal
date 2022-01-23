@@ -1,0 +1,30 @@
+.listaRedes ul li{
+    list-style: none;
+    display: inline;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    right: 30px;
+    transition: all 0.5s ease;
+    opacity: 0.9;
+}
+
+.redes:hover{
+    opacity: 1;
+    transform: scale(1.03, 1.03);
+}
+
+.botonesRedes{
+    list-style-type: none;
+    height: 160px;
+    weight: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: fixed;
+    right: 1%;
+    top: 190px;
+    z-index: 999;
+}

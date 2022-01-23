@@ -1,0 +1,37 @@
+.seccionBanners{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100% !important;
+    margin-bottom: 5em;
+}
+
+.banners{
+    border-radius: 40px;
+    opacity: .8;
+    transition: all 0.7s ease;
+    width: 50%;
+}
+
+.banners img{
+    border-radius: 40px;
+}
+
+
+.banners:hover{
+    opacity: 1.0;
+    transform: scale(1.05, 1.05);
+}
+
+@media (max-width: 700px){
+    .seccionBanners{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .banners{
+        width: 90%;
+        margin: auto;
+    }
+}
